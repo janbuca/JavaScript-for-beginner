@@ -93,3 +93,20 @@ Example
 <script src="myScript2.js"></script>
 
 
+JavaScript Data Types
+    - String
+    - Number
+    - Boolean
+    - Array
+    - Object
+    - Null
+    - Undefined.
+    
+JavaScript has dynamic types.
+    This means that the same variable can be used as different types:
+        Example
+        var x; // Now x is undefined
+        x = 5; // Now x is a Number
+        x = "John"; // Now x is a String
+
+
