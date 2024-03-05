@@ -1,10 +1,45 @@
 JavaScript Introduction 
-    JavaScript is the world's most popular programming language.
-    JavaScript is the programming language of the Web.
-    JavaScript is easy to learn.
-    This tutorial will teach you JavaScript from basic to advanced.
-    Why Study JavaScript?
-JavaScript is one of the 3 languages all web developers must learn:
-   1. HTML to define the content of web pages
-   2. CSS to specify the layout of web pages
-   3. JavaScript to program the behavior of web pages
+    - JavaScript is the world's most popular programming language.
+    - JavaScript is the programming language of the Web.
+    - JavaScript is easy to learn.
+    - This tutorial will teach you JavaScript from basic to advanced.
+Why Study JavaScript?
+    JavaScript is one of the 3 languages all web developers must learn:
+        1. HTML to define the content of web pages
+        2. CSS to specify the layout of web pages
+        3. JavaScript to program the behavior of web pages
+
+
+Web pages are not the only place where JavaScript is used.
+    - Many desktop and server programs use JavaScript.
+    - Node.js is the best known.
+    - Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+
+JavaScript and Java are completely different languages, both in concept and design.
+
+What can JavaScript Do?
+    * Event handlers can be used to handle, and verify, user input, user actions, and browser actions:
+        - Things that should be done every time a page loads
+        - Things that should be done when the page is closed
+        - Action that should be performed when a user clicks a button
+        - Content that should be verified when a user inputs data
+
+
+Many different methods can be used to let JavaScript work with events:
+    - HTML event attributes can execute JavaScript code directly
+    - HTML event attributes can call JavaScript functions
+    - You can assign your own event handler functions to HTML elements
+    - You can prevent events from being sent or being handled
+
+JavaScript where To?
+    * internal(in HTML) and 
+        - In Head Section and 
+        - In Body Section
+    * external (linked via <script> tag)
+
+JavaScript display positivities
+    - javascript can be display data in different ways:
+        - Writing into an HTML element, using "innerHTML".
+        - Writing into the HTML output using "document.write()".
+        - Writing into an alert box, using " window alert()" function for simple messages.
+        - Writing into the browser console, using "Console.log()".
