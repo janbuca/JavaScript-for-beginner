@@ -6,22 +6,35 @@
     <title>js display inner html</title>
 </head>
 <body>
-    <h3>Display Inner HTML using JavaScript:</h3>
-     <!--  The div element to be manipulated -->
-     <p id = "display"></p>
+    <h2>InnerHTML</h2>
+    <p id = "display"></p>
      <p id = "out"></p>
-
+    <!-- display using innerHTML -->
     <script>
-        document.getElementById("display").innerHTML = "My Name is Janbuca Teshome"; // Displaying the value of 'name' in
-        document.getElementById("out").innerHTML = 19+9;    // Displaying the result of adding two numbers in 
+        document.getElementById("display").innerHTML = 9 + 9;
+         document.getElementById("out").innerHTML = "My Name is Janbuca Teshome";
     </script>
-    
+
+    <!-- Display using document.write() -->
+    <!-- To display the date and time. -->
+    <button type="button" onclick="document.write('My Name is Janbuca Teshome/Tabech')">Click Me</button><br>
+    <button type = "button" onclick = "document.getElementById('demo').innerHTML = Date()">
+       click to display Date and Time.</button>
+       <p id = "demo">Shome my Date and Time</p>
+
+       <!-- To incring the size of the value. -->
+       <p id = "large">Javascript can be change the style of the Html.</p>
+    <button type = "button" onclick = "document.getElementById('large').style.fontSize = '35px'">Click me</button>
+
+    <!-- To display the (hidden)none display  Element -->
+       <p>Javascript cna be show the hidden of HTML element.</p>
+       <p id = "none" style = "display:none">Hello my follower</p>
+    <button type = "button" onclick = "document.getElementById('none').style.display = 'block'">Click Me</button>
+
+    <!-- javascript can be hidden the HTML element -->
+       <p>javascript can be hidden the HTML element.</p>
+       <p id = "hidden">Hidden the HTML element.</p>
+    <button type = "button" onclick = "document.getElementById('hidden').style.display = 'none'">Click Me</button>
    
-    
-    <!-- A button that will trigger the script when clicked -->
-    <button type="button" onclick="document.write(8+9)">Click Me!</button>
-    
-    <!-- An empty paragraph where we want to show the result -->
-    
-</body>
+ </body>
 </html>

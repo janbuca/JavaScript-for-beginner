@@ -43,3 +43,53 @@ JavaScript display positivities
         - Writing into the HTML output using "document.write()".
         - Writing into an alert box, using " window alert()" function for simple messages.
         - Writing into the browser console, using "Console.log()".
+
+where is the position of JavaScript?
+    The <script> Tag
+    In HTML, JavaScript code must be inserted between <script> and </script> tags.
+    <script>
+    document.getElementById("demo").innerHTML = "My First JavaScript";
+    </script>
+
+JavaScript in <head> or <body>
+    You can place any number of scripts in an HTML document.
+    Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.
+
+    JavaScript in <head>
+        In this example, a JavaScript function is placed in the <head> section of an HTML page.
+        The function is invoked (called) when a button is clicked.
+
+        JavaScript in <body>
+            In this example, a JavaScript function is placed in the <body> section of an HTML page.
+            The function is invoked (called) when a button is clicked.
+
+
+External JavaScript
+    Scripts can also be placed in external files:
+    External file: myScript.js
+    function myFunction() {
+    document.getElementById("demo").innerHTML = "Programer by Janbuca.";
+        }
+
+External scripts are practical when the same code is used in many different web pages.
+JavaScript files have the file extension .js.
+To use an external script, put the name of the script file in the src (source) attribute of a <script> tag:
+Example
+<script src="myScript.js"></script>
+
+You can place an external script reference in <head> or <body> as you like.
+
+The script will behave as if it was located exactly where the <script> tag is located.
+External scripts cannot contain <script> tags.
+
+External JavaScript Advantages
+    Placing scripts in external files has some advantages:
+    It separates HTML and code
+    It makes HTML and JavaScript easier to read and maintain
+
+To add several script files to one page - use several script tags:
+Example
+<script src="myScript1.js"></script>
+<script src="myScript2.js"></script>
+
+
