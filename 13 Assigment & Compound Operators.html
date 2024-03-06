@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- JS Operator
+		-> Comparison Ope..
+				* Equ(=)...					* gth(>)...
+				* Not Equ(!=)...			* lth(<)...
+
+		-> Logical Ope... 
+				* and (&&)
+				* or (||)
+				* not (1)
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment & Compound Operators</title>
+</head>
+<body>
+    <h3>Js Assignment & Compound Operators</h3>
+    <p id="abc"></p>
+	<p id="bcd"></p>
+	<p id="cde"></p>
+	<p id="def"></p>
+	<p id="efg"></p>
+	<p id="x"></p>
+	<p id="y"></p>
+	<p id="z"></p>
+
+    <script>
+         let  x = 9, sum=0, dif=2, pro=3, quo=4, rem=5;
+			sum += x;
+			dif -= x;
+			pro *= x;
+			quo /= x;
+			rem %= x;
+
+            document.write("Value of x : ",x,"<br>");
+            document.write("Sum of x: ",sum,"<br>");
+            document.write("Difference of x: ",dif,"<br>");
+            document.write("Product of x: ",pro,"<br>");
+            document.write("Quotient of x: ",quo.toFixed(2),"<br>");
+            document.write("Remainder of x: ",rem,"<br><hr>");
+
+			// document.getElementById('abc').innerHTML = (sum);
+			// document.getElementById('bcd').innerHTML = (dif);
+			// document.getElementById('cde').innerHTML = (pro);
+			// document.getElementById('def').innerHTML = (quo);
+			// document.getElementById('efg').innerHTML = (rem);
+
+			document.getElementById('x').innerHTML = ((5==5)&&(9!=10));
+			document.getElementById('y').innerHTML = ((7>9)||(9<5));
+			document.getElementById('z').innerHTML = (!(5==5));
+
+			document.writeln(5==5);
+			document.writeln(5==7);
+			document.writeln(5==="5");
+			document.writeln(5!=5);
+			document.writeln(5!=9);
+			document.writeln(5!=="9");
+			document.writeln(5>5);
+			document.writeln(5>=5);
+			document.writeln(5<9);
+			document.writeln(10 !== 9); 
+    </script>
+</body>
+</html>
