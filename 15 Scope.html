@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- 
+    In JavaScript there are two types of Scope:
+            Local Scope &
+            Global Scope -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope</title>
+  </head>
+  <body>
+    <h3>Scope(Global and Local) of variable</h3>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+      var stud1 = "Janbuca Teshome";
+      myFunction1();
+      document.getElementById("demo").innerHTML = "This Student is the firest Student" + " " + stud1;
+
+      myFunction2();
+      function myFunction1() {
+        var stud2 = "Ephrem Teshome";
+        document.getElementById("demo1").innerHTML = "The Student Name is" + " " + stud1;
+        document.getElementById("demo2").innerHTML = "The Student Name is" + " " + stud2;
+      }
+      function myFunction2() {
+        document.getElementById("demo3").innerHTML = "The Name of the Second Student" + " " + typeof stud2;
+      }
+    </script>
+  </body>
+</html>
