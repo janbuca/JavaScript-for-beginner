@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String slice</title>
+</head>
+<body>
+    <h2>String Slice Method</h2>
+    <!-- Extracting String Parts.
+    There are 3 methods of extracting a part of the string.
+            slice(start, end)
+            substring(start,end)
+            substr(start,end) -->
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+   <script>
+     var str = "hi my name is janbuca she names is tabech and he namesing it called by the grandpap";
+    var pos1 = str.indexOf("name", 9);
+    document.getElementById("demo").innerHTML = pos1;
+
+     var pos2 = str.search("name");
+    document.getElementById("demo1").innerHTML = pos2;
+
+    var app = "Apple, Banana, kiwi";
+    var rus = app.slice(7);
+    document.getElementById("demo4").innerHTML=rus;
+
+    var res = app.slice(7, 13);
+    document.getElementById("demo3").innerHTML
+    =res;
+
+    var rrr = app.slice(-21, -6);
+    document.getElementById("demo5").innerHTML=rrr;
+
+    
+    
+   </script>
+   
+</body>
+</html>
