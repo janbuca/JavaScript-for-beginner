@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Js Date</title>
+</head>
+<body>
+	<h2>It is Js Date</h2>
+	<p id="demo">demo</p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	<p id="demo8"></p>
+	<p id="demo9"></p>
+	<p id="demo10"></p>
+	<p id="demo11"></p>
+	<p id="demo12"></p>
+	<p id="demo13"></p>
+	<p id="demo14"></p>
+	<p id="demo15"></p>
+
+
+	<script type="text/javascript">
+		var d = new Date();
+		document.getElementById('demo').innerHTML = d;
+
+		var d1 = new Date(2023, 11, 7, 8, 60, 59, 57);
+		document.getElementById('demo1').innerHTML = d1;
+
+		var d2 = new Date(2020, 9, 7, 8, 60, 59);
+		document.getElementById('demo2').innerHTML = d2;
+
+		var d3 = new Date(2018, 7, 7, 7, 57);
+		document.getElementById('demo3').innerHTML = d3;
+
+		var d4 = new Date(2020, 9, 7, 8,);
+		document.getElementById('demo4').innerHTML = d4;
+
+		var d5 = new Date(2023, 7, 7);
+		document.getElementById('demo5').innerHTML = d5;
+
+		var d6 = new Date(2020, 9);
+		document.getElementById('demo6').innerHTML = d6;
+
+		var d7 = new Date(2023);
+		document.getElementById('demo7').innerHTML = d7;
+
+		var d8 = new Date(99, 2, 18);
+		document.getElementById('demo8').innerHTML = d8;
+
+		var d9 = new Date(2, 5);
+		document.getElementById('demo9').innerHTML = d9;
+
+		var d10 = new Date(0);
+		document.getElementById('demo10').innerHTML = d10;
+
+		var d11 = new Date(1000000000000);
+		document.getElementById('demo11').innerHTML = d11;
+
+		var d12 = new Date(-100000000000);
+		document.getElementById('demo12').innerHTML = d12;
+
+		var d13 = new Date();
+		document.getElementById('demo13').innerHTML = d13.tostring;
+
+		var d14 = new Date();
+		document.getElementById('demo14').innerHTML = d14.toUTCstring;
+
+		var d15 = new Date();
+		document.getElementById('demo15').innerHTML = d15.toDatestring;
+
+
+	</script>
+
+</body>
+</html>
