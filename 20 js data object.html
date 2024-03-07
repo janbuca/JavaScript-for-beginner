@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Data Objects</title>
+</head>
+<body>
+    <h2>Js Date Object</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <script>
+                function digitalClock(seconds) {
+                    // Calculate the hours, minutes, and seconds
+                    const hours = Math.floor(seconds / 3600);
+                    seconds %= 3600;
+                    const minutes = Math.floor(seconds / 60);
+                    seconds %= 60;
+
+                    // Pad the hours, minutes, and seconds with leading zeros
+                    const paddedHours = hours.toString().padStart(2, "0");
+                    const paddedMinutes = minutes.toString().padStart(2, "0");
+                    const paddedSeconds = seconds.toString().padStart(2, "0");
+
+                    // Return the digital clock time as a string
+                    return `${paddedHours}:${paddedMinutes}:${paddedSeconds}`;
+        }
+
+        console.log(digitalClock(5025)); // "01:23:45"
+        console.log(digitalClock(61201)); // "17:00:01"
+        console.log(digitalClock(87000)); // "00:10:00"
+
+        var d1 = new Date();
+        document.getElementById("demo").innerHTML=d1;
+
+        var d2 = new Date(2023, 2, 18, 21, 19, 14, 12);
+        document.getElementById("demo1").innerHTML=d2;
+
+        var d3 = new Date(2023, 2, 18, 21, 19, 14);
+        document.getElementById("demo2").innerHTML=d3;
+
+        var d4 = new Date(2023, 2, 18, 21, 19);
+        document.getElementById("demo3").innerHTML=d4;
+
+        var d5 = new Date();
+        document.getElementById("demo4").innerHTML=d5.toDateString();
+
+        var d6 = new Date();
+        document.getElementById("demo5").innerHTML=d6.toString();
+
+        var d7 = new Date(99, 11,24);
+        document.getElementById("demo6").innerHTML=d7;
+
+        var d8 = new Date(9, 11, 24);
+        document.getElementById("demo7").innerHTML=d8;
+
+    </script>
+
+</body>
+</html>
