@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js setDate</title>
+</head>
+<body>
+    <h2>Js SetDate Methods</h2>
+
+    <script>
+        var d1 = new Date();
+        d1.setFullYear(2025);
+        console.log(d1);
+
+        var d2 = new Date();
+        d2.setFullYear(2025,11, 18);
+        console.log(d2);
+
+        var d3 = new Date();
+        d3.setMonth(2);
+        console.log(d3);
+
+        var d4 = new Date();
+        d4.setDate(22);
+        console.log(d4);
+
+        var d5 = new Date();
+        d5.setDate(d5.getDate() + 50);
+        console.log(d5);
+
+        var d6 = new Date();
+        d6.setHours(22);
+        console.log(d6);
+
+        var d7 = new Date();
+        d7.setMinutes(34);
+        console.log(d7);
+
+        var d8 = new Date();
+        d8.setSeconds(30);
+        console.log(d8);
+
+        var today, someDay, text;
+        today = new Date();
+        someDay = new Date();
+        someDay.setFullYear(2100, 0, 14);
+
+        if(someDay > today){
+            text = "ToDay is before January 14, 2100.";
+        }else{
+            text = "Today is after January 14, 2100.";
+        }
+        console.log(text);
+    </script>
+</body>
+</html>
