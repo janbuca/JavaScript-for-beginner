@@ -10,7 +10,7 @@
     <p id="demo2">demo1</p>
 
     <script type="text/javascript">
-      var car = { name: "Fiar", model: 2023, color: "White", price: 20000 };
+      var car = { name: "Filar", model: 2023, color: "White", price: 20000 };
       document.getElementById("demo").innerHTML =
         "The car Name is" +
         car.name +
@@ -18,13 +18,45 @@
         car.model +
         "it also color is" +
         car.color;
-      var Name = {
-        firstName: "Janbuca",
-        MidelName: "Tabech",
-        LastName: "Teshome",
-        age: 23,
-        DOB: 2000,
-      };
-    </script>
-  </body>
+
+        let Student_info = {
+            first_Name : "Janbuca",
+            middle_name:"Teshome",
+            last_name :"Tebech",
+            DoB : 2000
+        }
+        
+        document.write("This Student name :" + Student_info.first_Name
+         + "<br> The Student father name  :"  + Student_info.middle_name
+         + "<br> The Student Last Name  :" +Student_info.last_name
+         + "<br> The Student date of berth  : " +Student_info.DoB);
+
+
+         // create an object
+        
+         let person = {
+            first_Name:"janbuca",
+            last_name:"Teshome",
+            id:"UU79309R",
+            email:"janbucateshome@gmail.com",
+             fullName: function() {
+                return this.first_Name + " " + this.last_name;
+              },
+               introduce:function(){
+                   return `Hello my name is ${this.fullName()} and I'm a web developer.`;
+               }
+           };
+           document.write("<br>"+person.fullName());
+           document.write("<br>"+person.introduce());
+           document.write("<br>");
+          console.log(person.introduce());
+       </script>
+</body>
 </html>
+
+// Questions Answers 
+1- What does the code do?
+    - It creates two objects, one for a car and another for a student. Then it uses those objects to display information about them on the
+    - It creates two objects, one for a car and another for a student. Then it uses methods to access properties in each object.
+    
+   

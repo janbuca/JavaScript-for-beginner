@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Js String</title>
+</head>
+<body>
+	<h2>Js String</h2>
+	<p id="str">It is the firest string</p>
+	<p id="str1">It is the second string</p>	
+	<p id="str2">It is the 3 string</p>
+	<p id="sln"></p>
+	<p id="a"></p>
+	<p id="b"></p>
+	<p id="c"></p>
+	<p id="d"></p>
+	<p id="e"></p>
+	
+	<script type="text/javascript">
+		var str = "she is my best 'frind' ";
+		var str1 = "It is called \"Addidas\"";
+		var str2 = 'It is called "Shose"';
+		var txt = "ABCDEFGHIJKLMNOPKRSTUVWXYZ";
+		var sln = txt.length;
+		var str3 = "My programming content is including the programming language like'C++','HTML5','CSS','Php','java','Js' ";
+		var pos = str3.indexOf('program', 15);
+		var vvv = "My programming content including the programming";
+		//var po1 = str4.lastIndOf('program')
+		var res = str3.slice(27);
+		var res = str3.slice(5, 15);
+		var res = str3.slice(-32, -1);
+
+
+		document.getElementById('str').innerHTML = str;
+		document.getElementById('str1').innerHTML = str1;
+		document.getElementById('str2').innerHTML = str2;
+		document.getElementById('sln').innerHTML = sln;
+		document.getElementById('a').innerHTML = str3;
+		document.getElementById('b').innerHTML = pos;
+		document.getElementById('c').innerHTML = res;
+	</script>
+</body>
+</html>
