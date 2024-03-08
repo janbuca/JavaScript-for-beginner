@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- 
+    JavaScript While Loop
+        Loops can execute a block of code as long as a specified condition is true.
+        The while loop loops through a block of code as long as a specified condition is true.
+            Syntax:
+                while (condition) {
+                code block to be executed
+                }
+
+    The Do/While Loop
+        The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+            Syntax:
+                do {
+                code block to be executed
+                }
+                while (condition);
+        Do not forget to increase the variable used in the condition, otherwise the loop will never end!
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js while loop</title>
+</head>
+<body>
+    <h2>JavaScript While Loop and Do while Loop</h2> 
+    
+    <script>
+        var i = 0;
+        var text = " ";
+        while (i < 10) {
+        text += "The number is " + i + '<br>';
+        i++;
+        }
+        document.write(text);
+    </script><br><br><hr><br><br>
+
+    <script>
+        var i = 0;
+        var text;
+        do {
+        text += "The number is " + i + '<br>';
+        i++;
+        }while (i < 10);
+        document.write(text);
+    </script>
+
+    <!-- <script>
+       
+        var i = 0;
+        var txt = " ";
+        while (i<=3) {
+            // console.log(i);
+            // i++;
+             txt += "The number is " + i + "\n"; 
+             i++;            
+        }
+        console.log(txt);
+    </script> -->
+
+    <!-- <script>
+        var i = 10;
+        var txt;
+        do {
+            txt += "The Number is" + i;
+            i++;
+        } while (i < 20);
+
+        console.log("The do While loop");
+        console.log(txt);
+    </script> -->
+
+    <!-- <script>
+        var n = 10;
+        console.log("The Enter is  a Natural Number");      
+        let i=0;
+        while(i < 5){
+        n++;
+       }
+       console.log(i + "\t"); 
+    </script>
+    
+    <script>        
+        let n = 50;
+   do{
+       console.log(i + "\t");
+              n = n-5;
+   }while(n >= 5);
+
+    </script> -->
+
+    <!-- <script>
+        
+   var n = 100, a = 1, sum = 0;
+   do{
+       if(i%2==0)
+       sum +=i;
+       i++;
+   }while(i<=n);
+   //cout <<"\n"<<sum; -->
+
+    </script>
+</body>
+</html>
