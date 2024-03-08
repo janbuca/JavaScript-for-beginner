@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- 
+    JavaScript Break and Continue
+        The break statement "jumps out" of a loop.
+        The continue statement "jumps over" one iteration in the loop.
+
+    The Break Statement
+        You have already seen the break statement used in an earlier chapter of this tutorial.
+        It was used to "jump out" of a switch() statement.
+        The break statement can also be used to jump out of a loop.
+        The break statement breaks the loop and continues executing the code after the loop (if any):
+            Example
+                for (i = 0; i < 10; i++) {
+                if (i === 3) { break; }
+                text += "The number is " + i + "<br>";
+                }
+    
+    The Continue Statement
+        The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+        This example skips the value of 3:
+            Example
+                for (i = 0; i < 10; i++) {
+                if (i === 3) { continue; }
+                text += "The number is " + i + "<br>";
+                }
+
+    JavaScript Labels
+        To label JavaScript statements you precede the statements with a label name and a colon:
+            label:
+            statements
+            The break and the continue statements are the only JavaScript statements that can "jump out of" a code block.
+            Syntax:
+            break labelname;
+            continue labelname;
+            The continue statement (with or without a label reference) can only be used to skip one loop iteration.
+            The break statement, without a label reference, can only be used to jump out of a loop or a switch.
+            With a label reference, the break statement can be used to jump out of any code block:
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Break</title>
+</head>
+<body>
+    <h2>Js Break, continue and label</h2>
+
+    <script>
+        var txt = " ";
+        for (let i = 0; i < 10; i++) {
+            if (i == 3) {
+                break;
+            }
+            txt  += "The number is " + i +"\n ";            
+        }
+        console.log(txt);
+    </script>
+
+    <script>
+        var con = " ";
+        for (let n = 0; n < 10; n++) {
+           if (n == 3) {
+            continue;
+           }
+           con += "The Number is " + n +"\n";
+        }
+        console.log(con);
+    </script>
+
+    <script>
+        var lab = " ";
+        var cars = ["BMW", "Volvo", "Saab", "Ford", "Toyota", "vites"];
+        list:{
+            lab += cars[0] + "\n";
+            lab += cars[1] + "\n";
+            lab += cars[2] + "\n"; 
+            break list;
+            lab += cars[3] + "\n";
+            lab += cars[4] + "\n";
+            lab += cars[5] + "\n";
+        }
+        console.log(lab);
+    </script>
+
+    <script>
+        var cars = ["BMW", "Volvo", "Saab", "Ford"];
+        var text = "";
+        list: {
+            text += cars[0] + "<br>";
+            text += cars[1] + "<br>";
+            text += cars[2] + "<br>";
+        break list;
+            text += cars[3] + "<br>";
+            text += cars[4] + "<br>";
+            text += cars[5] + "<br>";
+        }
+        document.write(text);
+        </script>
+</body>
+</html>
