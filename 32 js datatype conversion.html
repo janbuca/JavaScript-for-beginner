@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- 
+    JavaScript Type Conversion
+    Number() converts to a Number, String() converts to a String, Boolean() converts to a Boolean.
+        JavaScript Data Types
+            In JavaScript there are 5 different data types that can contain values:
+            string
+            number
+            boolean
+            object
+            function
+
+        There are 3 types of objects:
+            Object
+            Date
+            Array
+        
+        And 2 data types that cannot contain values:
+            null
+            undefined
+
+        The typeof Operator
+            You can use the typeof operator to find the data type of a JavaScript variable.
+                Example
+                    typeof "John" // Returns "string"
+                    typeof 3.14 // Returns "number"
+                    typeof NaN // Returns "number"
+                    typeof false // Returns "boolean"
+                    typeof [1,2,3,4] // Returns "object"
+                    typeof {name:'John', age:34} // Returns "object"
+                    typeof new Date() // Returns "object"
+                    typeof function () {} // Returns "function"
+                    typeof myCar // Returns "undefined" *
+                    typeof null // Returns "object"
+        
+        The Data Type of typeof
+            The typeof operator is not a variable. It is an operator.
+            Operators ( + - * / ) do not have any data type.
+            But, the typeof operator always returns a string (containing the type of the operand).
+        
+        The Data Type of typeof
+            The typeof operator is not a variable. It is an operator.
+            Operators ( + - * / ) do not have any data type.
+            But, the typeof operator always returns a string (containing the type of the operand).
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js datatype conversion</title>
+</head>
+<body>
+    <h2>Js Datatype Conversion</h2>
+    <script>
+        console.log("Type of Operators")
+        console.log (typeof" Janbuca");
+        console.log (typeof 3.14);
+        console.log (typeof NaN);
+        console.log (typeof false);
+        console.log (typeof [1, 2, 3, 4, 5]);
+        console.log (typeof {name:'janbuca', age:23});
+        console.log (typeof new Date());
+        console.log (typeof function(){});
+        console.log (typeof mycar);
+        console.log (typeof null);
+    </script>
+
+     <script>
+        console.log("Converting Number to Strings.");
+        var n = 777;
+        console.log(String(n));
+        console.log(String(999));
+        console.log(String(55 + 55));
+        console.log("Number Method tostring.");
+        var x = 123;
+        console.log(x.toString());
+        console.log((555).toString());
+        console.log((110 + 5).toString());
+
+    </script>
+    
+    <script>
+        console.log("Converting Booleans to Strings.");
+    </script>
+    
+    <script>
+        console.log("Converting Date to String.");
+    </script>
+
+    <script>
+        console.log("Converting String to Numbers");
+    </script>
+
+    <script>
+        console.log("The Unary Operator.");
+        // var x = "5";        // x is a string
+        // var y = 'Janbuca';  // y is a string.
+        // var x = + y;        // y is a number.
+    </script>
+    <script>
+        console.log("Converting Booleans to a Number");
+    </script>
+    <script>
+        console.log("Converting Dates to Numbers");
+    </script>
+    <script>
+        console.log("Automatic Type Converting.");
+    </script> 
+</body>
+</html>
