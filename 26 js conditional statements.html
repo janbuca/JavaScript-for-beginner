@@ -27,8 +27,34 @@
   <body>
     <h2>Conditional Statements</h2>
     <script>
-      if (new Date().getHours() > 18) {
+        // 1 example  using an if statement
+      if (new Date().getHours() < 18) {
         document.write("Good day!");
+      }else{
+        document.write("Good Evening <br/>")
+      }
+
+      // 2 example  - using an if and else if statement
+      let x = 5;
+      if (x > 7){
+        document.write("<br/>The number is greater than 7");
+      }else if(x == 5){
+        document.write("<br/>The number is exactly 5"); 
+      }else{
+        document.write("<br/>The number is less than 5");
+      }
+      
+     /* Switch case are used when we have multiple conditions with different actions for each condition */
+      let fruit = "apple";
+      switch (fruit) {
+        case "banana":
+          document.write("<br/>I like bananas.");
+          break;
+        case "apple":
+          document.write("<br/>I prefer apples.");
+          break;
+        default:
+          document.write("<br/>I don't know what you mean by \""+fruit+"\". ");
       }
     </script>
   </body>
